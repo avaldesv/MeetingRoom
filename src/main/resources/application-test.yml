@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:meetingroom_test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+app:
+  security:
+    jwt:
+      secret: test-jwt-secret-key-meeting-room-32chars
+      expiration-ms: 3600000
+    demo-user:
+      username: admin
+      password: admin123

@@ -1,0 +1,13 @@
+target/
+data/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+.cursor/
+*.log
+.DS_Store
+scripts/
+_publish_progress.log
